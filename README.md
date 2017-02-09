@@ -3,7 +3,7 @@ Simple mock server providing json-based routing.
 
 ## install
 ```
-$ npm install --save url-mock-server
+$ npm install url-mock-server
 ```
 
 ## usage
@@ -15,15 +15,15 @@ const ms = new MockServer({
   "a" : {
     "_" : "fuga",// /a -> fuga
     "b" : "piyo" // /a/b -> piyo
-  },
-  "?" : {
-    "q1=v1" : "boo", // /a?q1=v1 -> boo
-    "q2=v2" : "baz", // /a?q2=v2 -> baz
-    "q1=v1&q2=v2" : "boobaz" // /a?q1=v1&q2=v2 -> boobaz
+    "?" : {
+      "q1=v1" : "boo", // /a?q1=v1 -> boo
+      "q2=v2" : "baz", // /a?q2=v2 -> baz
+      "q1=v1&q2=v2" : "boobaz" // /a?q1=v1&q2=v2 -> boobaz
+    },
   }
 });
 
-ms.listen(3000);
+ms.listen(3000); //http://127.0.0.1:3000
 ```
 
 ## license

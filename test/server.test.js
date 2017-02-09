@@ -81,8 +81,18 @@ describe("mock server", () =>{
       });
     });
 
-    it("multiple query", () => {
+    it("multiple query 1", () => {
       return rp("http://127.0.0.1:3000/a?q1=v1&q2=v2")
+      .then((res) => {
+        assert.equal(res, "boobaz");
+      })
+      .catch((err) => {
+        assert(err);
+      });
+    });
+
+    it("multiple query 2", () => {
+      return rp("http://127.0.0.1:3000/a?q2=v2&q1=v1")
       .then((res) => {
         assert.equal(res, "boobaz");
       })
