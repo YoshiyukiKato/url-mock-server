@@ -2,6 +2,9 @@
 Simple mock server providing json-based routing.
 
 ## install
+```
+$ npm install --save url-mock-server
+```
 
 ## usage
 ```js
