@@ -1,7 +1,7 @@
 {
-  "name": "json-mock-server",
-  "version": "0.0.1",
-  "description": "simple mock server",
+  "name": "url-mock-server",
+  "version": "0.0.2",
+  "description": "Simple mock server providing json-based routing.",
   "repository" : { 
     "type" : "git",
     "url" : "https://github.com/YoshiyukiKato/url-mock-server"
